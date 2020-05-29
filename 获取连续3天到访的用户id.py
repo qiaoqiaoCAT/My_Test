@@ -17,7 +17,7 @@ def test():
         dictx[key]=ret_set[index]
         index+=1
     [x.sort() for x in dictx.values()]
-
+    
     #遍历每一个key的value，如果其value有连续3天的就append
     ret=[]
     for key in dictx:
@@ -36,6 +36,7 @@ def test():
         if len(tmp)>=3:
             ret.append(key)
     return  ret
+
 if __name__=='__main__':
     a=test()
     print(a)
